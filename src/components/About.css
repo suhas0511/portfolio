@@ -1,5 +1,6 @@
 .about {
   background: #f8f9fa;
+  padding: 80px 0;
 }
 
 .about-content {
@@ -7,10 +8,12 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-text .intro {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 2rem;
@@ -27,26 +30,28 @@
 .stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   margin-top: 3rem;
 }
 
 .stat {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(102, 126, 234, 0.1);
 }
 
 .stat:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
 }
 
 .stat h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 800;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,8 +61,11 @@
 
 .stat p {
   color: #666;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.95rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .about-image {
@@ -70,104 +78,138 @@
   position: relative;
   width: 350px;
   height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-placeholder {
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 25px 50px rgba(102, 126, 234, 0.3);
   position: relative;
-  z-index: 2;
+  transition: all 0.4s ease;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-placeholder:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 30px 60px rgba(102, 126, 234, 0.4);
 }
 
 .avatar-icon {
-  font-size: 4rem;
+  font-size: 5rem;
   opacity: 0.9;
+  transition: all 0.3s ease;
 }
 
-.floating-elements {
+.profile-placeholder:hover .avatar-icon {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Add decorative elements */
+.profile-placeholder::before {
+  content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #667eea, #764ba2, #667eea);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.element {
-  position: absolute;
-  background: white;
-  color: #333;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  animation: float 3s ease-in-out infinite;
+.profile-placeholder:hover::before {
+  opacity: 0.3;
+  animation: rotate 3s linear infinite;
 }
 
-.element-1 {
-  top: 20%;
-  left: 10%;
-  animation-delay: 0s;
-  background: linear-gradient(135deg, #f39c12, #e67e22);
-  color: white;
-}
-
-.element-2 {
-  top: 30%;
-  right: 5%;
-  animation-delay: 1s;
-  background: linear-gradient(135deg, #61dafb, #21759b);
-  color: white;
-}
-
-.element-3 {
-  bottom: 30%;
-  left: 5%;
-  animation-delay: 2s;
-  background: linear-gradient(135deg, #68a063, #4f7942);
-  color: white;
-}
-
-.element-4 {
-  bottom: 20%;
-  right: 15%;
-  animation-delay: 3s;
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  color: white;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    transform: translateY(-10px);
+  to {
+    transform: rotate(360deg);
   }
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+  
   .about-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 3rem;
     text-align: center;
+    padding: 0 20px;
+  }
+  
+  .about-text .intro {
+    font-size: 1.2rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
   }
   
   .stats {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat {
+    padding: 1.5rem;
+  }
+  
+  .stat h3 {
+    font-size: 2.2rem;
   }
   
   .image-container {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .profile-placeholder {
     width: 250px;
     height: 250px;
+  }
+  
+  .avatar-icon {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    gap: 2rem;
+    padding: 0 15px;
+  }
+  
+  .stats {
+    gap: 1rem;
+  }
+  
+  .stat {
+    padding: 1.2rem;
+  }
+  
+  .image-container {
+    width: 220px;
+    height: 220px;
   }
   
   .profile-placeholder {
@@ -175,8 +217,7 @@
     height: 200px;
   }
   
-  .element {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+  .avatar-icon {
+    font-size: 3.5rem;
   }
 }

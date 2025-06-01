@@ -4,33 +4,32 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming Languages",
       skills: [
-        { name: "HTML/CSS", level: 95, icon: "🌐" },
-        { name: "JavaScript", level: 90, icon: "⚡" },
-        { name: "React", level: 88, icon: "⚛️" },
-        { name: "Vue.js", level: 75, icon: "💚" },
-        { name: "TypeScript", level: 80, icon: "📘" }
+        { name: "C Programming", level: 85, icon: "💻" },
+        { name: "Python", level: 75, icon: "🐍" },
+        { name: "HTML/CSS", level: 80, icon: "🌐" },
+        { name: "JavaScript", level: 70, icon: "⚡" },
       ]
     },
     {
-      title: "Backend",
+      title: "Design & Development",
       skills: [
-        { name: "Node.js", level: 85, icon: "🟢" },
-        { name: "Python", level: 80, icon: "🐍" },
-        { name: "Express.js", level: 88, icon: "🚀" },
-        { name: "MongoDB", level: 82, icon: "🍃" },
-        { name: "PostgreSQL", level: 78, icon: "🐘" }
+        { name: "Figma", level: 90, icon: "🎨" },
+        { name: "Frontend Web Dev", level: 75, icon: "🚀" },
+        { name: "UI/UX Design", level: 85, icon: "📱" },
+        { name: "Responsive Design", level: 80, icon: "📺" },
+        { name: "Canva", level: 88, icon: "🖼️" }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Tools & Engineering",
       skills: [
-        { name: "Git", level: 92, icon: "📝" },
-        { name: "Docker", level: 0, icon: "🐳" },
-        { name: "AWS", level: 10, icon: "☁️" },
-        { name: "Figma", level: 100, icon: "🎨" },
-        { name: "Jest", level: 0, icon: "🧪" }
+        { name: "SolidWorks", level: 75, icon: "🔧" },
+        { name: "Wokwi Simulator", level: 70, icon: "⚙️" },
+        { name: "Git", level: 65, icon: "📝" },
+        { name: "Problem Solving", level: 90, icon: "🧩" },
+        { name: "Project Management", level: 85, icon: "📊" }
       ]
     }
   ];
@@ -72,24 +71,24 @@ const Skills = () => {
         
         <div className="skills-summary">
           <div className="summary-item">
-            <div className="summary-icon">💻</div>
-            <h4>Full Stack Development</h4>
-            <p>End-to-end web application development with modern technologies</p>
+            <div className="summary-icon">🎓</div>
+            <h4>Academic Excellence</h4>
+            <p>Maintaining 9.1 GPA in Computer Science Engineering with strong foundation in programming</p>
           </div>
           <div className="summary-item">
-            <div className="summary-icon">📱</div>
-            <h4>Responsive Design</h4>
-            <p>Mobile-first approach ensuring great user experience on all devices</p>
+            <div className="summary-icon">🎨</div>
+            <h4>Design & Innovation</h4>
+            <p>Creating user-centric designs and innovative engineering solutions for real-world problems</p>
           </div>
           <div className="summary-item">
-            <div className="summary-icon">⚡</div>
-            <h4>Performance Optimization</h4>
-            <p>Fast, efficient applications with optimal loading times and smooth interactions</p>
+            <div className="summary-icon">🌱</div>
+            <h4>Sustainable Technology</h4>
+            <p>Passionate about developing eco-friendly solutions and renewable energy systems</p>
           </div>
           <div className="summary-item">
-            <div className="summary-icon">🔧</div>
-            <h4>Problem Solving</h4>
-            <p>Creative solutions to complex technical challenges with clean, maintainable code</p>
+            <div className="summary-icon">👥</div>
+            <h4>Leadership & Collaboration</h4>
+            <p>Active member and Digital/Media Head at IUCEE EWB MCE Student Chapter</p>
           </div>
         </div>
       </div>

@@ -10,32 +10,34 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="intro">
-              I'm a passionate full-stack developer with a love for creating 
-              innovative web solutions that make a difference.
+              I'm a passionate Computer Science Engineering student with a love for creating 
+              innovative web solutions and sustainable technology projects.
             </p>
             
             <p>
-              Fresher out of college, I have a strong foundation in both frontend and backend technologies.
+              I'm a 3rd year CSE student at Malnad College of Engineering. 
+              I have a foundation in both frontend development and engineering design, with experience 
+              in web development, UI/UX design, and sustainable technology projects.
             </p>
             
             <p>
               When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or sharing my knowledge through 
-              blog posts and mentoring other developers.
+              working on innovative projects like sand battery systems, 
+              or contributing as Digital and Media Head at IUCEE EWB MCE Student Chapter.
             </p>
             
             <div className="stats">
               <div className="stat">
-                <h3>2</h3>
+                <h3>4+</h3>
                 <p>Projects Completed</p>
               </div>
               <div className="stat">
-                <h3>Fresher</h3>
-                <p>Years Experience</p>
+                <h3>Student</h3>
+                <p>3rd Year CSE</p>
               </div>
               <div className="stat">
-                <h3>Interest</h3>
-                <p>Eager to dive</p>
+                <h3>9.1</h3>
+                <p>Current GPA</p>
               </div>
             </div>
           </div>
@@ -48,12 +50,6 @@ const About = () => {
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                   </svg>
                 </div>
-              </div>
-              <div className="floating-elements">
-                <div className="element element-1">JS</div>
-                <div className="element element-2">React</div>
-                <div className="element element-3">Node</div>
-                <div className="element element-4">CSS</div>
               </div>
             </div>
           </div>
