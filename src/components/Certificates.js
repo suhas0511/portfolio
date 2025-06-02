@@ -8,7 +8,7 @@ const Certificates = () => {
       organization: "Great Learning",
       year: "2023",
       icon: "🏆",
-      link: "https://tinyurl.com/Shreyas-C",
+      link: "#",
       description: "Fundamental programming concepts in C language"
     },
     {
@@ -16,7 +16,7 @@ const Certificates = () => {
       organization: "IUCEE EWB MCE",
       year: "2023",
       icon: "🌐",
-      link: "https://tinyurl.com/Shreyas-webdevelopment",
+      link: "#",
       description: "Frontend web development fundamentals"
     },
     {
@@ -24,7 +24,7 @@ const Certificates = () => {
       organization: "Me-risee Organisation",
       year: "2023",
       icon: "🎯",
-      link: "https://tinyurl.com/Shreyas-Prastuti",
+      link: "#",
       description: "Project presentation and communication skills"
     },
     {
@@ -32,7 +32,7 @@ const Certificates = () => {
       organization: "Infosys",
       year: "2023",
       icon: "🐍",
-      link: "https://tinyurl.com/Shreyas-python",
+      link: "#",
       description: "Python programming fundamentals and applications"
     },
     {
@@ -40,7 +40,7 @@ const Certificates = () => {
       organization: "IUCEE",
       year: "2024",
       icon: "🎓",
-      link: "https://tinyurl.com/Shreyas-IASF",
+      link: "#",
       description: "Engineering education and student forum participation"
     },
     {
@@ -48,7 +48,7 @@ const Certificates = () => {
       organization: "Swayam, NPTEL",
       year: "2024",
       icon: "💡",
-      link: "https://tinyurl.com/Shreyas-softskill",
+      link: "#",
       description: "Communication, leadership, and interpersonal skills"
     },
     {
@@ -56,7 +56,7 @@ const Certificates = () => {
       organization: "Swayam, NPTEL",
       year: "2024",
       icon: "🖥️",
-      link: "https://drive.google.com/file/d/1FkMI_r2Jwh6Nw5Pql_5zVX2-hLFt5pXz/view?usp=drive_link",
+      link: "#",
       description: "User interface design and human-centered computing"
     }
   ];
