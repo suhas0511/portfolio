@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <h3>Shreyas Gowda P</h3>
+              <h3>SUHAS K GOWDA </h3>
               <p>Full Stack Developer</p>
             </div>
             <p className="footer-description">
@@ -68,8 +68,8 @@ const Footer = () => {
               </a>
             </div>
             <div className="footer-contact">
-              <p><i className="fas fa-envelope"></i> sgpmcehsn@gmail.com</p>
-              <p><i className="fas fa-phone"></i> +91 8762859155</p>
+              <p><i className="fas fa-envelope"></i> suhas11533@gmail.com</p>
+              <p><i className="fas fa-phone"></i> +91 7795536585</p>
             </div>
           </div>
         </div>
