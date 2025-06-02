@@ -23,7 +23,7 @@ const About = () => {
             <p>
               When I'm not coding, you can find me exploring new technologies, 
               working on innovative projects like sand battery systems, 
-              or contributing as Digital and Media Head at IUCEE EWB MCE Student Chapter.
+              
             </p>
             
             <div className="stats">
@@ -36,7 +36,7 @@ const About = () => {
                 <p>3rd Year CSE</p>
               </div>
               <div className="stat">
-                <h3>9.1</h3>
+                <h3>7.5</h3>
                 <p>Current GPA</p>
               </div>
             </div>
