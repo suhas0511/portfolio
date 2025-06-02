@@ -73,7 +73,7 @@ const Skills = () => {
           <div className="summary-item">
             <div className="summary-icon">🎓</div>
             <h4>Academic Excellence</h4>
-            <p>Maintaining 9.1 GPA in Computer Science Engineering with strong foundation in programming</p>
+            <p>Maintaining 7.5 GPA in Computer Science Engineering with strong foundation in programming</p>
           </div>
           <div className="summary-item">
             <div className="summary-icon">🎨</div>
@@ -88,7 +88,7 @@ const Skills = () => {
           <div className="summary-item">
             <div className="summary-icon">👥</div>
             <h4>Leadership & Collaboration</h4>
-            <p>Active member and Digital/Media Head at IUCEE EWB MCE Student Chapter</p>
+            <p>Active member at IUCEE EWB MCE Student Chapter</p>
           </div>
         </div>
       </div>
